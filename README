@@ -1,0 +1,56 @@
+ProxDuino v9000.1
+
+********************************************************
+SAFETY CONSIDERATIONS
+********************************************************
+This system requires ELECTRONICS. 
+
+ELECTRONICS require ELECTRICY.
+
+ELECTRICY is DANGEROUS.
+
+It only takes a handful of miliamps across your
+heart to stop it.
+
+We take absolutely no responsibility for and do not 
+assume any liability for anything that results from 
+reading this document and attempting to implement 
+the system described within.
+
+THIS INCLUDES THE BREACHING OF A SECURITY SYSTEM,
+DEATH OF PEOPLE IMPLEMENTING THAT SYSTEM, AND OTHER
+POTENTIAL INCIDENTS TOO NUMEROUS TO LIST.
+********************************************************
+SAFETY CONSIDERATIONS
+********************************************************
+
+
+DEPENDANCIES
+********************************************************
+Software:
+SQLite 3 and the python libraries for it
+
+Hardware:
+RFID reader that outputs Weigand-26
+Maglock that can be energized with 12 volts
+Relay with a two pins that are normally closed
+12 volt power supply(old laptop cords work great)
+Arduino (Developed on Duemilanove and Uno)
+
+python-script/
+	the python script that acts as a maglock server
+arduino-stuff/
+	arduino sketch and wiring diagram
+
+SETUP
+********************************************************
+Change the MASTERCARD values in the python script to
+a card value you have and a pin you know.
+
+Change the serial port to the port the arduino
+shows up on.
+
+Wire up everything like the diagram, plug the Arduino
+into a computer, fire up the python script (make sure 
+the serial port is set correctly), and start adding
+cards to the system.
